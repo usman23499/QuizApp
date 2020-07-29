@@ -1,0 +1,148 @@
+/* fieldset{
+  border-radius: 2em;
+  text-align: justify;   
+} */
+.navbar-nav{
+
+  margin-left: 86%;
+  border: 2px solid #050505;
+  background-color: #050505;
+  
+  
+}
+.nav-link,.navbar-brand{
+  color: white !important;
+}
+.navbar{
+  background-color: black !important;
+  border-bottom: 2px solid green !important;
+
+}
+.dropdown-item{
+ cursor: pointer;
+}
+.div1{
+  width: 80%;
+  height:60px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px grey;
+  margin-top: 3%;
+  text-align: left;
+  padding: 1.2%;
+}
+.p2{ 
+  margin-left: 60%;
+  display: inline;
+  font-weight: bold;
+
+}
+.p1{
+  display: inline;
+  font-weight: bold;
+}
+
+.div2{
+  width: 80%;
+  text-align: left;
+}
+
+.div3{
+  width: 77%;
+  height:50px;
+  background-color: #dce0dc;
+  border: 1px solid grey;
+  box-shadow: 1px 1px grey;
+  margin-top: 3%;
+  text-align: left;
+  padding: .8%;
+}
+.div4{
+  width: 70%;
+  height:52px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px grey;
+  margin-top: 30px;
+  text-align: left;
+  padding: 1.1%;
+}
+.div5{
+  
+  background-color: #dce0dc;
+  text-align: left;
+  border: 1px solid grey;
+  padding: 15px;
+  
+  display: inline;
+  margin-left: -1.6%;
+
+}
+.p4{
+  margin-left: 4%;
+  display: inline-block;
+}
+.div6{
+  text-align: right;
+  width: 68%;
+}
+button{
+  background-color: #476bad;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px !important;
+  width: 75px;
+  height: 35px;
+  outline: none !important;
+}
+button:focus{
+  outline: none !important;
+}
+button:hover{
+ outline: none !important;
+  opacity: 0.7;
+}
+
+.progress{
+  width: 50% !important;
+  height: 40px !important;
+  /* display: none !important; */
+  margin-top: 15%;
+}
+
+
+
+
+
+.name{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+}
+
+.prop{
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  .div5{
+  
+    background-color: transparent;
+    text-align: left;
+    border: none;
+    padding: 10px;
+    
+    display: inline;
+    margin-left: -1.6%;
+  
+  }
+  .p2{
+    display: block;
+  }
+}
+
+

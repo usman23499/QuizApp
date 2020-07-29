@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <h1>Quiz Application</h1>
+
+    <div>
+        <fieldset>
+            <p>
+                What is 2+15 ?
+            </p>
+            <input  name="Q1" id="q1-a1" type="radio">16<br>
+            <input name="Q1" id="q1-a2" type="radio">18<br>
+            <input name="Q1" id="q1-a3" type="radio">17<br>
+            <input name="Q1" id="q1-a4" type="radio">20<br>
+        </fieldset>
+    </div>
+    <br><br>
+    <div>
+        <fieldset>
+            <p>
+                What is the name of Turkey President ?
+            </p>
+            <input  name="Q2" id="q2-a1" type="radio">Dolanad Trump<br>
+            <input name="Q2" id="q2-a2" type="radio">Imran Khan<br>
+            <input name="Q2" id="q2-a3" type="radio">Tayyab Irdawan<br>
+            <input name="Q2" id="q2-a4" type="radio">None of these<br>
+        </fieldset>
+    </div>
+    <br><br>
+    <div>
+        <fieldset>
+            <p>
+                What is 20*4 ?
+            </p>
+            <input  name="Q3" id="q3-a1" type="radio">40<br>
+            <input name="Q3" id="q3-a2" type="radio">30<br>
+            <input name="Q3" id="q3-a3" type="radio">11<br>
+            <input name="Q3" id="q3-a4" type="radio">20<br>
+        </fieldset>
+    </div>
+    <br>
+ 
+    <button onclick="cheak()">SUBMIT</button> -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#">K2</a>
+     
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item dropdown">
+
+
+
+            
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              Reset
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" onclick="history.go(0)">Reset</a>
+              
+            </div>
+          </li>
+          
+        </ul>
+       
+      </div>
+    </nav>
+<center>
+<div id="main">
+
+      <div class="div1">
+        <p class="p1"  >
+          
+          Quiz: Gernal Knowledge Quiz
+        
+        </p>
+        <p class="p2">00:
+          <b id="min">00</b>:<b id="sec">00</b><b id="msec"></b>/00:01:00
+        
+      </b>
+      </div>
+<br>
+
+      <div class="div2">
+        <p style="font-weight: bold;" id="qno">
+          Question : 1 0f 30
+        </p>
+      </div>
+
+      <div class="div3"> 
+
+        <p class="p1" id="question">
+          Quiz: Gernal Knowledge Quiz
+
+        </p>
+      </div>
+
+      <div class="div4"> 
+        <div class="div5">
+        <input type="radio" name="buttoncheak" id="a1">
+        </div>
+        <p class="p4" id="a1-1">
+          A
+        </p>
+        
+      </div>
+      <div class="div4"> 
+        <div class="div5">
+        <input type="radio" name="buttoncheak" id="a2">
+        </div>
+        <p class="p4" id="a2-2">
+          B
+        </p>
+        
+      </div>
+      <div class="div4"> 
+        <div class="div5">
+        <input type="radio" name="buttoncheak" id="a3">
+        </div>
+        <p class="p4" id="a3-3">
+          C
+        </p>
+        
+      </div>
+      <div class="div4"> 
+        <div class="div5">
+        <input type="radio" name="buttoncheak" id="a4">
+        </div>
+        <p class="p4" id="a4-4">
+          D
+        </p>
+        
+      </div>
+<br>
+
+      <div class="div6">
+        <button onclick="next()">
+          Next
+        </button>
+      </div>
+      
+</div>
+<div id="pro" style="display: none;">
+<p id="name" class="name">NAME : Usman Hussian</p>
+<div class="progress">
+  
+  <div class="progress-bar" role="progressbar" style="width: 0%;" id="pb" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><p id="prop">100%</p></div>
+</div>
+</div>
+</center>
+
+
+
+
+
+
+
+
+
+
+<script  src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
